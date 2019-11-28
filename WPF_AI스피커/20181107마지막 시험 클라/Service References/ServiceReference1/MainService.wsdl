@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="MainService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="NetTcpBinding_IAiService_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <wsrm:RMAssertion xmlns:wsrm="http://schemas.xmlsoap.org/ws/2005/02/rm/policy">
+          <wsrm:InactivityTimeout Milliseconds="600000" />
+          <wsrm:AcknowledgementInterval Milliseconds="200" />
+        </wsrm:RMAssertion>
+        <msb:BinaryEncoding xmlns:msb="http://schemas.microsoft.com/ws/06/2004/mspolicy/netbinary1" />
+        <wsaw:UsingAddressing />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:7555/GetService?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:7555/GetService?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:7555/GetService?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WbService" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IAiService_AiSettingMessage_InputMessage">
+    <wsdl:part name="parameters" element="tns:AiSettingMessage" />
+  </wsdl:message>
+  <wsdl:message name="IAiService_AiSettingMessage_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AiSettingMessageResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAiService_Join_InputMessage">
+    <wsdl:part name="parameters" element="tns:Join" />
+  </wsdl:message>
+  <wsdl:message name="IAiService_Join_OutputMessage">
+    <wsdl:part name="parameters" element="tns:JoinResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAiService_Leave_InputMessage">
+    <wsdl:part name="parameters" element="tns:Leave" />
+  </wsdl:message>
+  <wsdl:message name="IAiService_SendMessage_InputMessage">
+    <wsdl:part name="parameters" element="tns:SendMessage" />
+  </wsdl:message>
+  <wsdl:message name="IAiService_SendMessage_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SendMessageResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAiService_GetDataList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataList" />
+  </wsdl:message>
+  <wsdl:message name="IAiService_GetDataList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAiService_CTv_On_OutputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:CTv_On" />
+  </wsdl:message>
+  <wsdl:message name="IAiService_CTv_On_InputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:CTv_OnResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAiService_CLight_On_OutputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:CLight_On" />
+  </wsdl:message>
+  <wsdl:message name="IAiService_CLight_On_InputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:CLight_OnResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAiService_CTv_ChannelUp_OutputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:CTv_ChannelUp" />
+  </wsdl:message>
+  <wsdl:message name="IAiService_CTv_ChannelUp_InputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:CTv_ChannelUpResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAiService_CLight_ChannelUp_OutputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:CLight_ChannelUp" />
+  </wsdl:message>
+  <wsdl:message name="IAiService_CLight_ChannelUp_InputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:CLight_ChannelUpResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAiService_CAiSet_OutputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:CAiSet" />
+  </wsdl:message>
+  <wsdl:message name="IAiService_CAiSet_InputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:CAiSetResponse" />
+  </wsdl:message>
+  <wsdl:portType msc:usingSession="true" name="IAiService">
+    <wsdl:operation msc:isInitiating="false" msc:isTerminating="false" name="AiSettingMessage">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAiService/AiSettingMessage" message="tns:IAiService_AiSettingMessage_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAiService/AiSettingMessageResponse" message="tns:IAiService_AiSettingMessage_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="Join">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAiService/Join" message="tns:IAiService_Join_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAiService/JoinResponse" message="tns:IAiService_Join_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="false" msc:isTerminating="true" name="Leave">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAiService/Leave" message="tns:IAiService_Leave_InputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="false" msc:isTerminating="false" name="SendMessage">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAiService/SendMessage" message="tns:IAiService_SendMessage_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAiService/SendMessageResponse" message="tns:IAiService_SendMessage_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="false" msc:isTerminating="false" name="GetDataList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAiService/GetDataList" message="tns:IAiService_GetDataList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAiService/GetDataListResponse" message="tns:IAiService_GetDataList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="CTv_On">
+      <wsdl:output wsaw:Action="http://tempuri.org/IAiService/CTv_On" message="tns:IAiService_CTv_On_OutputCallbackMessage" />
+      <wsdl:input wsaw:Action="http://tempuri.org/IAiService/CTv_OnResponse" message="tns:IAiService_CTv_On_InputCallbackMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="CLight_On">
+      <wsdl:output wsaw:Action="http://tempuri.org/IAiService/CLight_On" message="tns:IAiService_CLight_On_OutputCallbackMessage" />
+      <wsdl:input wsaw:Action="http://tempuri.org/IAiService/CLight_OnResponse" message="tns:IAiService_CLight_On_InputCallbackMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="CTv_ChannelUp">
+      <wsdl:output wsaw:Action="http://tempuri.org/IAiService/CTv_ChannelUp" message="tns:IAiService_CTv_ChannelUp_OutputCallbackMessage" />
+      <wsdl:input wsaw:Action="http://tempuri.org/IAiService/CTv_ChannelUpResponse" message="tns:IAiService_CTv_ChannelUp_InputCallbackMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="CLight_ChannelUp">
+      <wsdl:output wsaw:Action="http://tempuri.org/IAiService/CLight_ChannelUp" message="tns:IAiService_CLight_ChannelUp_OutputCallbackMessage" />
+      <wsdl:input wsaw:Action="http://tempuri.org/IAiService/CLight_ChannelUpResponse" message="tns:IAiService_CLight_ChannelUp_InputCallbackMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="CAiSet">
+      <wsdl:output wsaw:Action="http://tempuri.org/IAiService/CAiSet" message="tns:IAiService_CAiSet_OutputCallbackMessage" />
+      <wsdl:input wsaw:Action="http://tempuri.org/IAiService/CAiSetResponse" message="tns:IAiService_CAiSet_InputCallbackMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="NetTcpBinding_IAiService" type="tns:IAiService">
+    <wsp:PolicyReference URI="#NetTcpBinding_IAiService_policy" />
+    <soap12:binding transport="http://schemas.microsoft.com/soap/tcp" />
+    <wsdl:operation name="AiSettingMessage">
+      <soap12:operation soapAction="http://tempuri.org/IAiService/AiSettingMessage" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Join">
+      <soap12:operation soapAction="http://tempuri.org/IAiService/Join" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Leave">
+      <soap12:operation soapAction="http://tempuri.org/IAiService/Leave" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+    </wsdl:operation>
+    <wsdl:operation name="SendMessage">
+      <soap12:operation soapAction="http://tempuri.org/IAiService/SendMessage" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDataList">
+      <soap12:operation soapAction="http://tempuri.org/IAiService/GetDataList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CTv_On">
+      <soap12:operation soapAction="http://tempuri.org/IAiService/CTv_On" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CLight_On">
+      <soap12:operation soapAction="http://tempuri.org/IAiService/CLight_On" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CTv_ChannelUp">
+      <soap12:operation soapAction="http://tempuri.org/IAiService/CTv_ChannelUp" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CLight_ChannelUp">
+      <soap12:operation soapAction="http://tempuri.org/IAiService/CLight_ChannelUp" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CAiSet">
+      <soap12:operation soapAction="http://tempuri.org/IAiService/CAiSet" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="MainService">
+    <wsdl:port name="NetTcpBinding_IAiService" binding="tns:NetTcpBinding_IAiService">
+      <soap12:address location="net.tcp://localhost:6555/Chating" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>net.tcp://localhost:6555/Chating</wsa10:Address>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

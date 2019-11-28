@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="48e68686-7f20-42fc-ac30-6be524abfa16" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://192.168.0.4:7555/GetService" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="GetService.xsd" MetadataType="Schema" ID="644d67a6-7f4b-4716-848d-93586964fa25" SourceId="1" SourceUrl="http://192.168.0.4:7555/GetService?xsd=xsd0" />
+    <MetadataFile FileName="MainService.wsdl" MetadataType="Wsdl" ID="4d4033e2-6f40-40d9-8ef7-1449d8953e5a" SourceId="1" SourceUrl="http://192.168.0.4:7555/GetService?wsdl" />
+    <MetadataFile FileName="GetService.disco" MetadataType="Disco" ID="342b5ed3-70fc-495e-8833-dd95116142b7" SourceId="1" SourceUrl="http://192.168.0.4:7555/GetService?disco" />
+    <MetadataFile FileName="GetService1.xsd" MetadataType="Schema" ID="291820f5-06a7-4753-92cd-d5ba0b672642" SourceId="1" SourceUrl="http://192.168.0.4:7555/GetService?xsd=xsd1" />
+    <MetadataFile FileName="GetService2.xsd" MetadataType="Schema" ID="657df7cd-0431-4b32-814b-16bb2e68b410" SourceId="1" SourceUrl="http://192.168.0.4:7555/GetService?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

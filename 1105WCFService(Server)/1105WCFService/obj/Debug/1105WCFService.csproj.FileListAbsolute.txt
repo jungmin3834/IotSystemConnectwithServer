@@ -1,0 +1,44 @@
+C:\Users\user\Desktop\sample\1105WCFService\1105WCFService\bin\Debug\1105WCFService.exe.config
+C:\Users\user\Desktop\sample\1105WCFService\1105WCFService\bin\Debug\1105WCFService.exe
+C:\Users\user\Desktop\sample\1105WCFService\1105WCFService\bin\Debug\1105WCFService.pdb
+C:\Users\user\Desktop\sample\1105WCFService\1105WCFService\obj\Debug\1105WCFService.exe
+C:\Users\user\Desktop\sample\1105WCFService\1105WCFService\obj\Debug\1105WCFService.pdb
+C:\Users\user\Desktop\sample\1106WCFService\1105WCFService\bin\Debug\1105WCFService.exe.config
+C:\Users\user\Desktop\sample\1106WCFService\1105WCFService\bin\Debug\1105WCFService.exe
+C:\Users\user\Desktop\sample\1106WCFService\1105WCFService\bin\Debug\1105WCFService.pdb
+C:\Users\user\Desktop\sample\1106WCFService\1105WCFService\obj\Debug\1105WCFService.exe
+C:\Users\user\Desktop\sample\1106WCFService\1105WCFService\obj\Debug\1105WCFService.pdb
+\\192.168.0.52\고급28기 보내는폴더\1106WCFService\1105WCFService\bin\Debug\1105WCFService.exe.config
+\\192.168.0.52\고급28기 보내는폴더\1106WCFService\1105WCFService\obj\Debug\1105WCFService.exe
+\\192.168.0.52\고급28기 보내는폴더\1106WCFService\1105WCFService\obj\Debug\1105WCFService.pdb
+\\192.168.0.52\고급28기 보내는폴더\1106WCFService\1105WCFService\bin\Debug\1105WCFService.exe
+\\192.168.0.52\고급28기 보내는폴더\1106WCFService\1105WCFService\bin\Debug\1105WCFService.pdb
+\\192.168.0.52\고급28기 보내는폴더\1106WCFService\1105WCFService\obj\Debug\1105WCFService.csprojResolveAssemblyReference.cache
+C:\Users\rhwotmd\Documents\카카오톡 받은 파일\1106WCFService\1105WCFService\bin\Debug\1105WCFService.exe.config
+C:\Users\rhwotmd\Documents\카카오톡 받은 파일\1106WCFService\1105WCFService\bin\Debug\1105WCFService.exe
+C:\Users\rhwotmd\Documents\카카오톡 받은 파일\1106WCFService\1105WCFService\bin\Debug\1105WCFService.pdb
+C:\Users\rhwotmd\Documents\카카오톡 받은 파일\1106WCFService\1105WCFService\obj\Debug\1105WCFService.csprojAssemblyReference.cache
+C:\Users\rhwotmd\Documents\카카오톡 받은 파일\1106WCFService\1105WCFService\obj\Debug\1105WCFService.csproj.CoreCompileInputs.cache
+C:\Users\rhwotmd\Documents\카카오톡 받은 파일\1106WCFService\1105WCFService\obj\Debug\1105WCFService.exe
+C:\Users\rhwotmd\Documents\카카오톡 받은 파일\1106WCFService\1105WCFService\obj\Debug\1105WCFService.pdb
+C:\Users\DUMB\Documents\카카오톡 받은 파일\채팅클~2\1106WCFService\1105WCFService\bin\Debug\1105WCFService.exe.config
+C:\Users\DUMB\Documents\카카오톡 받은 파일\채팅클~2\1106WCFService\1105WCFService\obj\Debug\1105WCFService.exe
+C:\Users\DUMB\Documents\카카오톡 받은 파일\채팅클~2\1106WCFService\1105WCFService\obj\Debug\1105WCFService.pdb
+C:\Users\DUMB\Documents\카카오톡 받은 파일\채팅클~2\1106WCFService\1105WCFService\bin\Debug\1105WCFService.exe
+C:\Users\DUMB\Documents\카카오톡 받은 파일\채팅클~2\1106WCFService\1105WCFService\bin\Debug\1105WCFService.pdb
+C:\Users\DUMB\Documents\카카오톡 받은 파일\채팅클~2\1106WCFService\1105WCFService\obj\Debug\1105WCFService.csprojResolveAssemblyReference.cache
+D:\프로젝트\1106WCFService\1105WCFService\bin\Debug\1105WCFService.exe.config
+D:\프로젝트\1106WCFService\1105WCFService\obj\Debug\1105WCFService.exe
+D:\프로젝트\1106WCFService\1105WCFService\obj\Debug\1105WCFService.pdb
+D:\프로젝트\1106WCFService\1105WCFService\bin\Debug\1105WCFService.exe
+D:\프로젝트\1106WCFService\1105WCFService\bin\Debug\1105WCFService.pdb
+C:\Users\MSI\Desktop\프젝정리\프로젝트\1106WCFService\1105WCFService\bin\Debug\1105WCFService.exe.config
+C:\Users\MSI\Desktop\프젝정리\프로젝트\1106WCFService\1105WCFService\obj\Debug\1105WCFService.exe
+C:\Users\MSI\Desktop\프젝정리\프로젝트\1106WCFService\1105WCFService\obj\Debug\1105WCFService.pdb
+C:\Users\MSI\Desktop\프젝정리\프로젝트\1106WCFService\1105WCFService\bin\Debug\1105WCFService.exe
+C:\Users\MSI\Desktop\프젝정리\프로젝트\1106WCFService\1105WCFService\bin\Debug\1105WCFService.pdb
+C:\Users\MSI\Desktop\프젝정리\프로젝트\1106WCFService\1105WCFService\obj\Debug\1105WCFService.csprojResolveAssemblyReference.cache
+C:\Users\MSI\Desktop\프젝정리\프로젝트\1106WCFService\1105WCFService\bin\Debug\MySql.Data.dll
+C:\Users\MSI\Desktop\프젝정리\프로젝트\1106WCFService\1105WCFService\bin\Debug\Google.Protobuf.dll
+C:\Users\MSI\Desktop\프젝정리\프로젝트\1106WCFService\1105WCFService\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\MSI\Desktop\프젝정리\프로젝트\1106WCFService\1105WCFService\bin\Debug\MySql.Data.xml
